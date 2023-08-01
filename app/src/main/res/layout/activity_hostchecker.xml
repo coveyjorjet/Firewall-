@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnMenu"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_return"
+                android:scaleType="fitXY"
+                tools:ignore="HardcodedText,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:contentDescription="Back To Main View"
+                app:tint="@color/colorPrimaryBackground" />
+
+            <!--			<ImageButton-->
+            <!--				android:id="@+id/btnMenu"-->
+            <!--				style="?android:attr/buttonBarButtonStyle"-->
+            <!--				android:layout_width="30.0dip"-->
+            <!--				android:layout_height="30.0dip"-->
+            <!--				android:layout_alignParentEnd="true"-->
+            <!--				android:layout_centerVertical="true"-->
+            <!--				android:layout_marginEnd="12.0dip"-->
+            <!--				android:background="?selectableItemBackgroundBorderless"-->
+            <!--				android:contentDescription="Toolbar Menu"-->
+            <!--				android:padding="5.0dip"-->
+            <!--				android:scaleType="fitXY"-->
+            <!--				android:src="@drawable/morse"-->
+            <!--				app:tint="@color/colorPrimaryBackground"-->
+            <!--				tools:ignore="HardcodedText,TouchTargetSizeCheck" />-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Host Checker"
+                    android:textColor="@color/colorTextEnabled"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_height="wrap_content"
+            android:layout_width="275dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/colorPrimary"
+            app:cardCornerRadius="5dp"
+            app:cardPreventCornerOverlap="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextUrl"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="URL (eg: www.facebook.com)"
+                android:inputType="textMultiLine|textUri"
+                android:gravity="start"
+                android:typeface="serif"
+                android:textSize="15sp" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Spinner
+            android:entries="@array/request"
+            android:background="@color/colorPrimary"
+            android:popupBackground="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/spinnerRequestMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/proxyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="2dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/colorPrimary"
+            app:cardCornerRadius="5dp"
+            app:cardPreventCornerOverlap="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextProxy"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Proxy (ip:port)"
+                android:inputType="textMultiLine|textUri"
+                android:gravity="start"
+                android:typeface="serif"
+                android:textSize="15sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkBoxDirectRequest"
+            android:layout_marginStart="2dp"
+            android:layout_alignParentStart="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Proxy"
+            android:typeface="serif"
+            android:textStyle="bold|italic"/>
+
+        <Spinner
+            android:id="@+id/method"
+            android:background="@color/colorPrimary"
+            android:popupBackground="@color/colorPrimary"
+            android:entries="@array/method"
+            android:layout_alignParentEnd="true"
+            android:layout_width="150dp"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSearch"
+        android:layout_margin="5dp"
+        app:cornerRadius="15dp"
+        android:text="Check"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <ListView
+            android:id="@+id/listLogs"
+            android:clickable="false"
+            android:longClickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transcriptMode="alwaysScroll"
+            android:choiceMode="none"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

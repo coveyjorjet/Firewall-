@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="padding_small">8dp</dimen>
+	<dimen name="padding_medium">8dp</dimen>
+	<dimen name="padding_large">16dp</dimen>
+	<dimen name="title_size">20dp</dimen>
+	<dimen name="alert_def_padding">18dp</dimen>
+    
+
+    <dimen name="alert_width">290dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+
+
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+    <dimen name="_130sdp">130.0dip</dimen>
+	<dimen name="_90sdp">200.0dip</dimen> 
+</resources>

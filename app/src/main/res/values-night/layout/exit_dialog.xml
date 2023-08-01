@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/hiro_alert_bg">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_marginBottom="25dp">
+
+			<ImageView
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:adjustViewBounds="true"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:id="@+id/Image_new_fb"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FFFFFFFF"
+				android:textStyle="bold"
+				android:shadowColor="#FF000000"
+				android:shadowDy="5.0"
+				android:shadowRadius="1.5"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:id="@+id/text_view_dialog1"
+				android:typeface="serif"
+				android:layout_margin="10dp"
+				android:fontFamily="sans-serif-smallcaps"
+				android:gravity="center"
+				android:textSize="30sp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/happLinearLayout1"
+			android:layout_margin="10dp"
+			android:gravity="center">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:gravity="center"
+				android:id="@+id/text_view_dialog2"
+				android:typeface="serif"
+				android:textSize="15sp"/>
+
+		</LinearLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="5dp">
+
+			<TextView
+				android:textSize="15.0sp"
+				android:textColor="@color/colorOpposite"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:id="@+id/positiveTxt"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Okay"
+				tools:ignore="HardcodedText" />
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

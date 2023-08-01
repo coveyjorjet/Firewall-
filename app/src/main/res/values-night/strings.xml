@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <string name="app_name">Firewall Inject Vpn</string>
+
+	<string name="about">About</string>
+	<string name="config">Configuration</string>
+	<string name="setting">Settings</string>
+	<string name="settings_ssh">SSH Settings</string>
+	<string name="network_mobile">Mobile network</string>
+	<string name="method_connection">Connection Method</string>
+	<string name="rate_app">To evaluate</string>
+	<string name="feedback">Feedback</string>
+	<string name="first_start_msg">This application was developed for advanced users, keep this in mind when using it.</string>
+	<string name="title_login_main">Login Details</string>
+	<string name="connected">CONNECTED</string>
+    <string name="servicestop">Stop Secure</string>
+    <string name="authenticating">Authenticating</string>
+    <string name="authfailed">Authfailed</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="nonetwork">Nonetwork</string>
+	<string name="connecting">Connecting</string>
+	<!-- Preference -->
+	<string name="category_forward_udp">UDP Forwarding</string>
+	<string name="title_forward_udp">Forward UDP</string>
+	<string name="summary_forward_udp">Redirection was activated for the remote server. If not, UDP wont work.</string>
+	<string name="title_resolver_udp">UDP Gateway (Remote)</string>
+	<string name="summary_resolver_udp">Pattern (7300)</string>
+	<string name="category_forward_dns">DNS Forwarding</string>
+	<string name="title_forward_dns">Forward DNS</string>
+	<string name="summary_forward_dns">If active, redirect requests to the remote server. If not, DNS will be used by the local system.</string>
+	<string name="title_dns_primary">Primary DNS</string>
+	<string name="summary_dns_primary">Pattern (1.1.1.1)</string>
+	<string name="dialog_message_dns_primary">Enter DNS IP</string>
+	<string name="category_advanced_settings">Advanced Settings</string>
+	<string name="title_hide_log">Hide Log on Start</string>
+	<string name="summary_hide_log">If I activate the log it will not be shown automatically.</string>
+	<string name="title_auto_clear_log">Automatically Clear Logs</string>
+	<string name="summary_auto_clear_log">If I activate the Records they will be deleted automatically.</string>
+	<string name="category_forward_port">Port Forwarding</string>
+	<string name="title_mode_debug">Debugging Mode</string>
+	<string name="summary_mode_debug">Allows you to see more advanced information in the logs.</string>
+	<string name="title_number_max_threads">Maximum number of Threads</string>
+	<string name="summary_number_max_threads">The higher the number of Threads, the higher the power consumption and the connection speed on your device.</string>
+	<string name="category_filter_apps">App Filter</string>
+	<string name="title_filter_apps">Filter Apps</string>
+	<string name="title_bypass_mode">Bypass Mode</string>
+	<string name="summary_bypass_modo">If active, or traffic from the selected applications will be sent directly.</string>
+	<string name="title_apps_list">List of Apps</string>
+	<string name="summary_apps_list">Enter one package name per line. Look in Settings -> Apps for the app package name.</string>
+	<string name="category_settings_adicionais">Additional Settings</string>
+	<string name="title_mode_night">Night Mode (beta)</string>
+	<string name="title_ping_time">Ping (seconds)</string>
+	<string name="category_user_interface">User Interface</string>
+	<string name="title_language">Language</string>
+	<string name="category_tunnel">Tunnel</string>
+
+	<!-- novo -->
+
+	<string name="ssh_server">Server</string>
+	<string name="ssh_port">Port</string>
+	<string name="ssh_porta_local">Local Port (Socks5)</string>
+	<string name="payload">Payload</string>
+	<string name="sni">SNI Host</string>
+	<string name="proxy_remote">Proxy Remote</string>
+	<string name="proxy_ip">Proxy IP/Host</string>
+	<string name="proxy_port">Port</string>
+	<string name="proxy_auth">Proxy Authentication</string>
+	<string name="proxy_user">User</string>
+	<string name="proxy_pass">Password</string>
+	<string name="dir_name">Pasta</string>
+
+	<string name ="alert_exit">Are you sure you want to exit?</string>
+	<string name="alert_clear_settings">Are you sure you want to reset?</string>
+	<string name="no_value">Empty</string>
+	<string name="blocked">Locked</string>
+	<string name="expired">Expired</string>
+	<string name="title_delete_file">Exclude File</string>
+	<string name="alert_delete_file">Do you want to include this file?</string>
+	<string name="dir_home_name">Internal Memory</string>
+	<string name="select_file_setting">Select File</string>
+	<string name="title_permission_request">Grant Permissions</string>
+	<string name="message_permission_request">Please, it is necessary to grant necessary permissions for the application to work properly.</string>
+	<string name="show_license">See Licenses</string>
+
+	<!--- export setting -->
+	<string name="name_file">File Name</string>
+	<string name="export_button">Export</string>
+	<string name="title_security">Security / Lock</string>
+	<string name="check_protect">Lock configuration and prevent editing</string>
+	<string name="title_extra">Extra</string>
+	<string name="check_block_root">Block Root</string>
+	<string name="check_show_login_start">Show Login to Start</string>
+	<string name="check_date_valid">Set Expiration Date</string>
+	<string name="input_note_msg">Message / Note for users (optional)</string>
+	<string name="alert_block_settings">Configuration lock does not guarantee 100% security</string>
+	<string name="error_empty_name_file">File name must not be empty</string>
+
+	<!--- action messages -->
+	<string name="minimize">Minimize</string>
+	<string name="exit">Exit</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="save">Save</string>
+	<string name="open">Open</string>
+	<string name="more">More</string>
+	<string name="cancel">Cancel</string>
+	<string name="wait">Wait</string>
+	<string name="attention">Attention</string>
+	<string name="ok">Ok</string>
+	<string name="close">Close</string>
+	<string name="open_with">Open With</string>
+	<string name="clear_settings">Restore</string>
+	<string name="clear_logs">Clear Records</string>
+	<string name="settings_ImportExport">Import/Export</string>
+	<string name="settings_import">Import Configuration</string>
+	<string name="settings_export">Export Configuration</string>
+	<string name="actived">Dark Theme</string>
+	<string name="disabled">Light Theme</string>
+
+	<!--Welcome Wizard strings (DJH)-->
+	<string name="wizard_details">Some details of Firewall Inject</string>
+	<string name="wizard_details_msg">Firewall Inject is a VPN client that works through an SSH server. The application itself is useless without a configuration, so it is only for use by advanced users.</string>
+	<string name="payload_details">Keywords</string>
+	<string name="payload_details_msg">The following keywords are currently supported in the connection text: [method] [host_port] [ssh] [host] [port] [protocol] [crlf] [cr] [lf] [lfcr] [ua] [random=*;] [rotate=*;] [split] [delay_split]</string>
+	<string name="project_home">Developer Home:</string>
+	<string name="project_urls">http://t.me/SlipkProjects</string>
+	<string name="third_party_software">Third Party Software</string>
+	<string name="jsocks_version">JSocks v1.0.1: https://jsocks.sourceforge.net</string>
+	<string name="trileadssh2_version">Trilead SSH-2 Build 217: https://github.com/jenkinsci/trilead-ssh2</string>
+
+	<!--- error messages -->
+	<string name="error_tunnel_service_execution">Running service, stop it first</string>
+	<string name="error_no_supported">Function not supported by your device</string>
+	<string name="error_invalid_settings">Invalid configuration</string>
+	<string name="error_settings_blocked">Configuration locked</string>
+	<string name="error_delete_file">Failed to delete file</string>
+	<string name="error_file_config_incompatible">Unsupported file</string>
+	<string name="error_file_not_found">File not Found</string>
+	<string name="error_permission_writer_required">Write permission is required</string>
+	<string name="error_date_selected_invalid">The selected day cannot be less than today</string>
+	<string name="error_export_settings">Could not export configuration</string>
+	<string name="success_clear_settings">Settings were restored</string>
+	<string name="success_import_settings">Imported file</string>
+	<string name="success_export_settings">Exported configuration</string>
+
+	<!-- Ainda Falta Traduzir -->
+	<string name="title_agradecimento_especial">Special thanks to</string>
+	<string name="error_userpass_empty">Enter the username / password provided by the configuration creator</string>
+	<string name="title_disable_delay_ssh">Disable TCP Delay</string>
+	<string name="summary_disable_delay_ssh">If active there will be no delays between requests, which can improve ping or even the speed of the connection.</string>
+	<string name="title_tethering_subnet">Tethering Subnet (beta)</string>
+	<string name="summary_tethering_subnet">Enable it if youre having trouble sharing your devices internet.</string>
+
+	<string name="error_request_permission">You need access to External Storage</string>
+
+	<string name="importing_settings">Importing Configuration</string>
+	<string name="log_settings_valid">File valid until: %1$s</string>
+	<string name="log_server_banner">Server Message:</string>
+	<string name="log_conection_lost">Connection Lost</string>
+
+
+	<string name="start">CONNECT</string>
+	<string name="stop">DISCONNECT</string>
+	<string name="reconnect">Reconnect</string>
+
+	<string name="starting_service_ssh">[START] service requested</string>
+	<string name="stopping_service_ssh">[STOP] service requested</string>
+
+	<string name="title_auth">AUTHENTICATION</string>
+	<string name="auth_message">Complete with SSH account details</string>
+	<string name="auth_username">USERNAME</string>
+	<string name="password">PASSWORD</string>
+	<string name="show_password">Show Password</string>
+	<string name="save_password">Save Password</string>
+
+
+	<string name="channel_name_background">Connection statistics</string>
+    <string name="channel_description_background">Ongoing statistics of the established VPN connection</string>
+    <string name="channel_name_status">Connection status change</string>
+    <string name="channel_description_status">Status changes of the Firewall Inject connection (Connecting, authenticating,…)</string>
+	<string name="channel_name_userreq">User interaction required</string>
+    <string name="channel_description_userreq">Firewall Inject connection requires a user input, e.g. two factor authentification</string>
+
+	<string name="state_starting">Getting Started</string>
+	<string name="state_connecting">Connecting</string>
+    <string name="state_wait">WAITING FOR SERVER RESPONSE</string>
+    <string name="state_auth">Authenticating</string>
+	<string name="state_auth_success">Authenticate with password  </string>
+    <string name="state_get_config">Getting client configuration</string>
+    <string name="state_assign_ip">Assigning IP addresses</string>
+    <string name="state_add_routes">Adding routes</string>
+    <string name="state_connected">Connected</string>
+    <string name="state_disconnected">Disconnected</string>
+    <string name="state_reconnecting">Reconnecting</string>
+    <string name="state_stopping">STOPPING</string>
+    <string name="state_noprocess">Not running</string>
+    <string name="state_resolve">Resolving host names</string>
+    <string name="state_tcp_connect">Conectando (TCP)</string>
+    <string name="state_auth_failed">Authentication failed</string>
+    <string name="state_nonetwork">Waiting for network</string>
+    <string name="state_waitconnectretry">Waiting %ss seconds between connection attempt</string>
+    <string name="state_auth_pending">Waiting for Autentication</string>
+    <string name="state_user_vpn_password" translatable="false">Waiting for user VPN password</string>
+	<string name="state_user_vpn_permission" translatable="false">Waiting for user permission to use VPN API</string>
+	<string name="state_user_vpn_password_cancelled" translatable="false">VPN password input dialog cancelled</string>
+    <string name="state_user_vpn_permission_cancelled" translatable="false">VPN API permission dialog cancelled</string>
+    <string name="unknown_state">Unknown Status</string>
+	<string name="nought_alwayson_warning"><![CDATA[If you did not get a VPN confirmation dialog, you have \"Always on VPN\" enabled for another app. In that case only that app is allowed to connect to a VPN. Check under Settings-> Networks more .. -> VPNS]]></string>
+	<string name="no_vpn_support_image">Your image does not support the VPNService API, sorry :(</string>
+    <string name="state_proxy_running">Running proxy</string>
+	<string name="state_proxy_inject">Injecting</string>
+
+	<string name="mobile_info">Running on %3$s %1$s (%2$s), Android %5$s API %4$d</string>
+	<string name="app_mobile_info">Application Version: %1$s %2$s</string>
+
+	<string name="alert_update_app">Install the latest version</string>
+	<string name="error_settings_expired">Expired File</string>
+	<string name="error_file_settings_invalid">Invalid Configuration</string>
+	<string name="error_file_invalid">Invalid File</string>
+	<string name="error_internet_off">Please connect to the internet</string>
+	<string name="error_empty_payload">The payload cannot be empty</string>
+	<string name="error_empty_settings">Configure correctly to start</string>
+	<string name="error_proxy_invalid">Invalid Proxy</string>
+	<string name="error_server_ip_invalid">Invalid Server / IP</string>
+	<string name="error_root_detected">Locked configuration for devices with root access</string>
+	<string name="error_vpn_sniffer_detected">Another running VPN application has been detected, stop it before</string>
+	<string name="error_save_settings">Couldnt Save Configuration</string>
+    <string name="gmail">Email: ambabovpnservices@gmail.com</string>
+	<string name="Facebook_Profile">Facebook : https://www.facebook.com/cjdeluna.1999</string>
+    <string name="check_ip">Check IP</string>
+	<string name="ip">IP:</string>
+	<string name="isp">ISP:</string>
+	<string name="country">Country:</string>
+	<string name="state">State:</string>
+	<string name="city">City:</string>
+	<string name="version">Version</string>
+	<string name="license">License</string>
+	<string name="guide">Guide</string>
+	<string name="term_of_use">TERM OF USE</string>
+	<string name="term_of_use_message">By using this program, you agree to all of the quotations below.</string>
+
+	<string name="bits_per_second">%.0f</string>
+	<string name="kbits_per_second">%.1f</string>
+	<string name="mbits_per_second">%.1f</string>
+	<string name="gbits_per_second">%.1f</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="volume_byte">%.0f</string>
+	<string name="volume_kbyte">%.1f</string>
+	<string name="volume_mbyte">%.1f</string>
+	<string name="volume_gbyte">%.1f</string>
+
+	<string name="day_night">Night Mode</string>
+
+	<string name="root_detected">To Potect our server privacy, we\'ve decided to block rooted devices.\nSorry You Are Not Allowed To Use this App.</string>
+	<string name="torrent_detected">To Protect our server performance , we\'ve decided to block Torrent Apps.\nSorry for inconvenience</string>
+	<string name="sniff_detected">To Protect our server Privacy , we\'ve decided to block Sniffing Apps.\nSorry for inconvenience</string>
+</resources>

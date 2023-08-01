@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="140dp"
+			android:gravity="center">
+
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@drawable/src_images_iconfail"
+				android:layout_marginBottom="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="W A R N I N G"
+				android:textStyle="bold"
+				android:textColor="#FF000000"
+				android:typeface="monospace"
+				android:textSize="28sp"
+                tools:ignore="HardcodedText" />
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="-You are not required to use this application because you are trying to remodefied this app, the app will be currupted."
+			android:layout_margin="5dp"
+			android:layout_marginTop="15dp"
+			android:textColor="#FF000000"
+            tools:ignore="HardcodedText" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="-Please Reinstall the Original App."
+			android:layout_margin="5dp"
+			android:layout_marginTop="15dp"
+			android:textColor="#FF000000"
+            tools:ignore="HardcodedText" />
+
+	</LinearLayout>
+
+</LinearLayout>
+

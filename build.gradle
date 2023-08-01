@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        gradlePluginPortal()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.google.gms:google-services:4.3.14'
+
+    }
+
+}
+
+allprojects {
+    repositories {
+
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url "https://repo1.maven.org/maven2/" }
+        maven { url "https://repo.jenkins-ci.org/public/" }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+    }
+}

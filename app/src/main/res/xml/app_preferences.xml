@@ -1,0 +1,116 @@
+<androidx.preference.PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:key="screenMain">
+
+	<androidx.preference.PreferenceCategory
+		android:title="UDP Forwarding"
+
+		app:iconSpaceReserved="false">
+
+		<androidx.preference.CheckBoxPreference
+			android:key="udpForward"
+			app:iconSpaceReserved="false"
+			android:summary="@string/summary_forward_udp"
+			android:title="@string/title_forward_udp" />
+
+		<com.ambabovpn.pro.view.SummaryEditTextPreference
+			android:key="udpResolver"
+			app:iconSpaceReserved="false"
+			android:title="@string/title_resolver_udp"
+			android:summary="@string/summary_resolver_udp"
+			android:dialogMessage=""
+			android:singleLine="true"
+			/>
+
+
+	</androidx.preference.PreferenceCategory>
+	<androidx.preference.PreferenceCategory
+		android:title="DNS Forwarding"
+		app:iconSpaceReserved="false" >
+
+		<androidx.preference.CheckBoxPreference
+			android:key="dnsForward"
+			app:iconSpaceReserved="false"
+			android:summary="@string/summary_forward_dns"
+			android:title="@string/title_forward_dns" />
+
+		<com.ambabovpn.pro.view.SummaryEditTextPreference
+			android:key="dnsResolver"
+			app:iconSpaceReserved="false"
+			android:title="@string/title_dns_primary"
+			android:summary="@string/summary_dns_primary"
+			android:dialogMessage="@string/dialog_message_dns_primary"
+			android:singleLine="true"
+			/>
+
+
+	</androidx.preference.PreferenceCategory>
+	<androidx.preference.PreferenceCategory
+		android:title="Ping"
+		app:iconSpaceReserved="false" >
+
+		<androidx.preference.CheckBoxPreference
+			android:key="isPing"
+			app:iconSpaceReserved="false"
+			android:summary="@string/summary_forward_dns"
+			android:title="Ping Server"/>
+
+
+		<com.ambabovpn.pro.view.SummaryEditTextPreference
+			android:key="pingURL"
+			app:iconSpaceReserved="false"
+			android:title="Host"
+			android:defaultValue="clients3.google.com"
+			android:summary="clients3.google.com"
+			android:dialogMessage="Enter Ping Seconds"
+			android:singleLine="true"
+			/>
+
+		<com.ambabovpn.pro.view.SummaryEditTextPreference
+			android:key="pingerSSH"
+			app:iconSpaceReserved="false"
+			android:title="@string/title_ping_time"
+			android:maxLength="3"
+			android:summary="3"
+			android:dialogMessage="Enter Ping Seconds"
+			android:singleLine="true"
+			/>
+
+	</androidx.preference.PreferenceCategory>
+	<androidx.preference.PreferenceCategory
+		android:title="Additional"
+		app:iconSpaceReserved="false" >
+
+		<androidx.preference.CheckBoxPreference
+			android:key="autoClearLogs"
+			app:iconSpaceReserved="false"
+			android:defaultValue="true"
+			android:summary="@string/summary_auto_clear_log"
+			android:title="@string/title_auto_clear_log"
+			/>
+
+		<androidx.preference.CheckBoxPreference
+			android:key="hideLog"
+			app:iconSpaceReserved="false"
+			android:defaultValue="false"
+			android:summary="@string/summary_hide_log"
+			android:title="@string/title_hide_log"
+			/>
+
+	</androidx.preference.PreferenceCategory>
+
+	<androidx.preference.PreferenceCategory
+		android:title="Advanced"
+		app:iconSpaceReserved="false">
+
+		<androidx.preference.Preference
+			app:iconSpaceReserved="false"
+			android:key="screenAdvancedSettings"
+			app:fragment="com.ambabovpn.pro.preference.SettingsAdvancedPreference"
+			android:title="@string/category_advanced_settings"
+			/>
+
+	</androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

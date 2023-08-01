@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:padding="10dp"
+		android:id="@+id/serverListLayout">
+
+		<ImageView
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:id="@+id/itemImage"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="10dp"
+			android:gravity="center">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Text"
+					android:id="@+id/itemName"
+					android:textColor="@color/colorOpposite"
+					android:textSize="16sp"
+					android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Text"
+					android:id="@+id/tvCountry"
+					android:textSize="12sp"
+					android:textColor="#FF000000"
+					android:textStyle="bold"
+					android:visibility="gone"
+                    tools:ignore="HardcodedText" />
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Text"
+				android:layout_marginEnd="3dp"
+				android:id="@+id/tvInfo"
+				android:textSize="11sp"
+				android:gravity="center"
+				android:textColor="#FF000000"
+				android:textStyle="bold"
+				android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

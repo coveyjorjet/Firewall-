@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:orientation="vertical"
+	android:padding="10dp"
+	android:id="@+id/speed_activity_main">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="fill_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:orientation="vertical">
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="horizontal">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="IP:"
+							android:layout_marginEnd="10dp"
+							android:textStyle="bold"
+							style="@style/TextView4"
+							android:gravity="center"
+							tools:ignore="HardcodedText" />
+
+						<TextView
+							android:id="@+id/textView4"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentTop="true"
+							android:layout_centerHorizontal="true"
+							android:layout_gravity="center"
+							style="@style/TextView4"
+							android:gravity="center"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="horizontal"
+						android:visibility="gone">
+
+						<TextView
+							android:id="@+id/ipd"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="ISP:"
+							android:layout_marginEnd="10dp"
+							android:textStyle="bold"
+							android:textSize="10sp"
+							android:gravity="center"
+							tools:ignore="HardcodedText" />
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/txisp"
+							android:textSize="10sp"
+							android:gravity="center"
+							android:textColor="#000000"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="horizontal"
+						android:visibility="gone">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="Country:"
+							android:layout_marginEnd="10dp"
+							android:id="@+id/textView8"
+							android:textStyle="bold"
+							android:textSize="10sp"
+							android:gravity="center"
+							tools:ignore="HardcodedText" />
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/txcountry"
+							android:textSize="10sp"
+							android:gravity="center"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="horizontal"
+						android:visibility="gone">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="State:"
+							android:layout_marginEnd="10dp"
+							android:id="@+id/textView9"
+							android:textStyle="bold"
+							android:textSize="10sp"
+							android:gravity="center"
+							tools:ignore="HardcodedText" />
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/txstate"
+							android:textSize="10sp"
+							android:gravity="center"
+							android:textColor="#000000"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="horizontal"
+						android:visibility="gone">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="City:"
+							android:layout_marginEnd="10dp"
+							android:id="@+id/textView10"
+							android:textStyle="bold"
+							android:textSize="10sp"
+							android:gravity="center"
+							tools:ignore="HardcodedText" />
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/txcity"
+							android:textSize="10sp"
+							android:gravity="center"
+							android:textColor="#000000"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="horizontal">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="Date:"
+							android:textStyle="bold"
+							android:layout_marginEnd="10dp"
+							style="@style/TextView4"
+							android:gravity="center"
+							tools:ignore="HardcodedText" />
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/txtDate"
+							style="@style/TextView4"
+							android:gravity="center"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="horizontal">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="Status:"
+							style="@style/TextView6"
+							android:textStyle="bold"
+							android:gravity="center"
+							android:layout_marginEnd="10dp"
+							tools:ignore="HardcodedText" />
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="No Status"
+							android:gravity="center"
+							style="@style/TextView6"
+							android:id="@+id/status"
+							tools:ignore="HardcodedText" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="PING"
+			style="@style/TextView5"
+			android:textStyle="bold"
+			android:id="@+id/textView"
+			android:gravity="center"
+			android:layout_marginTop="10dp"
+			tools:ignore="HardcodedText" />
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:background="#808080"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="0 ms"
+			style="@style/TextView3"
+			android:id="@+id/pingTextView"
+			android:gravity="center"
+			tools:ignore="HardcodedText" />
+
+		<LinearLayout
+			android:layout_height="60dp"
+			android:layout_width="fill_parent"
+			android:orientation="vertical"
+			android:id="@+id/chartPing"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="DOWNLOAD"
+			style="@style/TextView5"
+			android:textStyle="bold"
+			android:id="@+id/textView1"
+			android:gravity="center"
+			tools:ignore="HardcodedText" />
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:background="#808080"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="0 ms"
+			style="@style/TextView3"
+			android:id="@+id/downloadTextView"
+			android:gravity="center"
+			tools:ignore="HardcodedText" />
+
+		<LinearLayout
+			android:layout_height="60dp"
+			android:layout_width="fill_parent"
+			android:orientation="vertical"
+			android:id="@+id/chartDownload"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="UPLOAD"
+			style="@style/TextView5"
+			android:textStyle="bold"
+			android:id="@+id/textView2"
+			android:gravity="center"
+			tools:ignore="HardcodedText" />
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:background="#808080"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="0 ms"
+			style="@style/TextView3"
+			android:id="@+id/uploadTextView"
+			android:gravity="center"
+			tools:ignore="HardcodedText" />
+
+		<LinearLayout
+			android:layout_height="60dp"
+			android:layout_width="fill_parent"
+			android:orientation="vertical"
+			android:id="@+id/chartUpload"/>
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:background="#808080"
+			android:layout_marginBottom="10dp"/>
+
+		<LinearLayout
+			android:layout_height="80dp"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="100dp"
+				android:orientation="vertical"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="14dp"
+					android:layout_width="wrap_content"
+					android:text="Ping Meter"
+					style="@style/TextView2"
+					android:textStyle="bold"
+					tools:ignore="HardcodedText" />
+
+				<RelativeLayout
+					android:layout_marginTop="2dp"
+					android:layout_width="100dp"
+					android:layout_height="match_parent">
+
+					<ImageView
+						android:id="@+id/imageView1"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_alignParentEnd="true"
+						android:layout_alignParentStart="true"
+						android:src="@drawable/main"/>
+
+					<ImageView
+						android:id="@+id/barImageView1"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_alignParentTop="true"
+						android:layout_centerHorizontal="true"
+						android:src="@drawable/bar"/>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="100dp"
+				android:orientation="vertical"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="14dp"
+					android:layout_width="wrap_content"
+					android:text="Download Meter"
+					style="@style/TextView2"
+					android:textStyle="bold"
+					tools:ignore="HardcodedText" />
+
+				<RelativeLayout
+					android:layout_marginTop="2dp"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<ImageView
+						android:id="@+id/imageView"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_alignParentEnd="true"
+						android:layout_alignParentStart="true"
+						android:src="@drawable/main"/>
+
+					<ImageView
+						android:id="@+id/barImageView"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_alignParentTop="true"
+						android:layout_centerHorizontal="true"
+						android:src="@drawable/bar"/>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="100dp"
+				android:orientation="vertical"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="14dp"
+					android:layout_width="wrap_content"
+					android:text="Upload Meter"
+					style="@style/TextView2"
+					android:textStyle="bold"
+					tools:ignore="HardcodedText" />
+
+				<RelativeLayout
+					android:layout_marginTop="2dp"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<ImageView
+						android:id="@+id/imageView2"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_alignParentEnd="true"
+						android:layout_alignParentStart="true"
+						android:src="@drawable/main"/>
+
+					<ImageView
+						android:id="@+id/barImageView2"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_alignParentTop="true"
+						android:layout_centerHorizontal="true"
+						android:src="@drawable/bar"/>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentStart="true"
+			android:orientation="vertical"
+			android:layout_marginTop="10dp">
+
+			<Button
+				android:id="@+id/startButton"
+				android:layout_width="match_parent"
+				android:layout_height="45dp"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentStart="true"
+				android:elevation="0dp"
+				style="@style/TextView6"
+				android:shadowRadius="15"
+				android:text="Click Test"
+				android:textAllCaps="false"
+				tools:ignore="HardcodedText" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

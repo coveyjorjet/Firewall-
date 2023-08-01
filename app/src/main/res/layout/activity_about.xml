@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:padding="10dip"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<androidx.cardview.widget.CardView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				app:cardCornerRadius="20.0dip"
+				app:cardElevation="5.0dip"
+				app:cardUseCompatPadding="true"
+				>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:paddingTop="10dip"
+					android:paddingBottom="10dip"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<LinearLayout
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:paddingRight="5dp"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dip"
+						android:layout_marginBottom="10dip"
+						android:minHeight="50dp"
+						android:paddingLeft="5dp">
+
+						<View
+							android:layout_width="15dp"
+							android:layout_height="wrap_content"/>
+
+						<ImageView
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:src="@drawable/main_icon"/>
+
+						<View
+							android:layout_width="15dp"
+							android:layout_height="wrap_content"/>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="@string/app_name"
+								android:textAppearance="@style/TextAppearance.AppCompat.Title"
+								android:textColor="@color/colorPrimary"
+								android:textStyle="bold" />
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:textColor="#000000"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:clickable="true"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:minHeight="50dp">
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<ImageButton
+							android:layout_width="40dp"
+							android:layout_height="40dp"
+							android:background="@android:color/transparent"
+							app:srcCompat="@drawable/ic_info"
+							app:tint="@color/colorPrimary" />
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="@string/version"
+								android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+								android:textColor="@color/colorPrimary"
+								tools:ignore="HardcodedText" />
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:textColor="#000000"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/appVersion"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/help"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:clickable="true"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:minHeight="50dp">
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<ImageButton
+							android:layout_width="40dp"
+							android:layout_height="40dp"
+							android:background="@android:color/transparent"
+							app:srcCompat="@drawable/ic_autorenew_black_24dp"
+							app:tint="@color/colorPrimary" />
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/guide"
+							android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+							android:textColor="@color/colorPrimary"
+							tools:ignore="HardcodedText" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</androidx.cardview.widget.CardView>
+
+
+			<com.google.android.gms.ads.AdView
+				xmlns:ads="http://schemas.android.com/apk/res-auto"
+				android:id="@+id/adView2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				ads:adSize="BANNER"
+				ads:adUnitId="ca-app-pub-2905188701168289/8526766860"
+				android:layout_gravity="bottom"
+				android:layout_marginTop="10dp">
+
+			</com.google.android.gms.ads.AdView>
+
+			<androidx.cardview.widget.CardView
+				android:visibility="visible"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				app:cardCornerRadius="20.0dip"
+				app:cardElevation="5.0dip"
+				app:cardUseCompatPadding="true"
+				>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:paddingTop="10dp"
+					android:paddingBottom="10dp"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					app:cardCornerRadius="20.0dip"
+					app:cardElevation="5.0dip">
+					>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/term_of_use"
+						android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+						android:textColor="@color/colorPrimary"
+						android:textSize="19sp"
+						android:textStyle="bold"
+						tools:ignore="HardcodedText" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:gravity="center"
+						android:text="@string/term_of_use_message"
+						android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+						android:textColor="@color/colorPrimary"
+						tools:ignore="HardcodedText" />
+
+					<View
+						android:layout_width="20dp"
+						android:layout_height="wrap_content"/>
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:paddingBottom="10dp"
+						>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Responsibility"
+							android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+							android:textColor="@color/colorPrimary"
+							android:textSize="15sp"
+							android:textStyle="bold"
+							tools:ignore="HardcodedText" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_margin="5dp"
+							android:gravity="center"
+							android:text="Consider this program as a network tool that ensures security and anonymity and enables you to customize the start of the connection to the server. With the start of the custom connection,  it is possible	to bypass restrictions imposed on any type of internet network. The user is responsible for any damage caused to a network that is vulnerable to this technique and is also responsible for the damage caused to itself (charges, processes...)."
+							android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+							android:textColor="@color/colorPrimary"
+							tools:ignore="HardcodedText" />
+					</LinearLayout>
+
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:paddingBottom="10dp"
+						>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Service Warranty"
+							android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+							android:textColor="@color/colorPrimary"
+							android:textSize="15sp"
+							android:textStyle="bold"
+							tools:ignore="HardcodedText" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_margin="5dp"
+							android:gravity="center"
+							android:text="We use the SSH 2.0, and TLS protocol to cover the entire connection between client and server, so our service is susceptible to the same flaws and vulnerabilities present in this technology. We do not guarantee full connection stability or full server availability, but we will do everthing possible to make everything work well."
+							android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+							android:textColor="@color/colorPrimary"
+							tools:ignore="HardcodedText" />
+					</LinearLayout>
+
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:paddingBottom="10dp"
+						>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Privacy"
+							android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+							android:textColor="@color/colorPrimary"
+							android:textSize="15sp"
+							android:textStyle="bold"
+							tools:ignore="HardcodedText" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_margin="5dp"
+							android:gravity="center"
+							android:text="It collects statistics of usage and crash reports, collected  by Google Play, Firebase... It also collects search history and geographic location for advertisement selection."
+							android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+							android:textColor="@color/colorPrimary"
+							tools:ignore="HardcodedText" />
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:paddingBottom="10dp"
+						>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Advertisement"
+							android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+							android:textColor="@color/colorPrimary"
+							android:textSize="15sp"
+							android:textStyle="bold"
+							tools:ignore="HardcodedText" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_margin="5dp"
+							android:gravity="center"
+							android:text="Our service are made possible by displaying online advertisement to our visitors. Please consider supporting us by disablong your ad blocker."
+							android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+							android:textColor="@color/colorPrimary"
+							tools:ignore="HardcodedText" />
+					</LinearLayout>
+
+
+
+				</LinearLayout>
+
+
+
+
+			</androidx.cardview.widget.CardView>
+
+
+			<View
+				android:layout_width="0.0dip"
+				android:layout_height="10dp"/>
+
+			<androidx.cardview.widget.CardView
+				android:visibility="visible"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				app:cardCornerRadius="20.0dip"
+				app:cardElevation="5.0dip"
+				app:cardUseCompatPadding="true"
+				>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:paddingTop="10dp"
+					android:paddingBottom="10dp"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:layout_marginBottom="5dp"
+						android:text="Contribute"
+						android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+						android:textColor="@color/colorPrimary"
+						android:textStyle="bold"
+						tools:ignore="HardcodedText" />
+
+					<LinearLayout
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:clickable="true"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:minHeight="50dp">
+
+
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:text="Send us suggestion, bugs and others..."
+								android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+								android:textColor="@color/colorPrimary"
+								tools:ignore="HardcodedText" />
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:autoLink="email"
+								android:text="@string/gmail"
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:textColor="@color/colorPrimary" />
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:autoLink="web"
+								android:text="@string/Facebook_Profile"
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:textColor="@color/colorPrimary" />
+
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:autoLink="web"
+								android:text="Telegram : Ambabo Vpn Community"
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:textColor="@color/colorPrimary"
+								android:tint="#000000"
+								tools:ignore="HardcodedText" />
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</androidx.cardview.widget.CardView>
+
+			<View
+				android:layout_width="0.0dip"
+				android:layout_height="10dp"/>
+
+
+			<View
+				android:layout_width="0.0dip"
+				android:layout_height="15dp"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

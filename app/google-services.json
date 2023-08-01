@@ -1,0 +1,84 @@
+{
+  "project_info": {
+    "project_number": "728971182651",
+    "project_id": "ambabo-vpn-be51f",
+    "storage_bucket": "ambabo-vpn-be51f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728971182651:android:cd1e4c0cd48e3b63a4921e",
+        "android_client_info": {
+          "package_name": "com.ambabo.vpn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728971182651-bvaulkm6l14snp2bh67vq6pcesc3do03.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ambabo.vpn",
+            "certificate_hash": "dbf1cbaeed812b47aa7251a432c7671dff9614ac"
+          }
+        },
+        {
+          "client_id": "728971182651-2i253kapal3j0equdh0lbcodh9uofekv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn6sFeaHl36_KGJ9mdM-h-1o4ZZINhFSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728971182651-2i253kapal3j0equdh0lbcodh9uofekv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728971182651:android:d7d418fd7b3f7315a4921e",
+        "android_client_info": {
+          "package_name": "com.ambabovpn.pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728971182651-c05u6ureejmkblc13to7o03aqbai7hfm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ambabovpn.pro",
+            "certificate_hash": "dbf1cbaeed812b47aa7251a432c7671dff9614ac"
+          }
+        },
+        {
+          "client_id": "728971182651-2i253kapal3j0equdh0lbcodh9uofekv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn6sFeaHl36_KGJ9mdM-h-1o4ZZINhFSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728971182651-2i253kapal3j0equdh0lbcodh9uofekv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

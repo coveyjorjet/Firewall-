@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- have full network access -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- view network connections -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- view Wi-Fi connections -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- read the contents of your shared storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- run foreground service -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <!-- control vibration -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name="com.ambabovpn.pro.AmbaboVpnProApp"
+        android:allowBackup="true"
+        android:icon="@drawable/main_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="true"
+		android:requestLegacyExternalStorage="true">
+		
+		<!--- Activities -->
+
+		<activity
+            android:name="com.ambabovpn.pro.AmbaboVpnProActivity"
+            android:theme="@style/Theme.App.Starting"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+<!--		<activity-->
+<!--			android:name="com.ambabovpn.pro.AmbaboVpnProActivity"-->
+<!--            android:theme="@style/AppTheme"/>-->
+
+        <activity
+            android:label="Application Error"
+            android:name="com.ambabovpn.tunnel.ExceptionActivity"/>
+
+        <activity android:name=".activities.HostChecker"
+            android:parentActivityName=".AmbaboVpnProActivity"
+            android:label="Host Checker"/>
+        <activity
+            android:name="com.ambabovpn.pro.activities.ConfigGeneralActivity"
+            android:parentActivityName="com.ambabovpn.pro.AmbaboVpnProActivity"
+            android:label="@string/setting"/>
+
+        <receiver android:name="com.ambabovpn.tunnel.MainReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="com.ambabovpn.tunnel.MainReceiver.ACTION_SERVICE_STOP">
+                </action>
+                <action
+                    android:name="com.ambabovpn.tunnel.MainReceiver.ACTION_SERVICE_RESTART">
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:label="@string/app_name"
+            android:name="com.ambabovpn.tunnel.tunnel.vpn.TunnelVpnService"
+            android:exported="false"
+            android:enabled="true"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:label="@string/app_name"
+            android:name="com.ambabovpn.tunnel.SocksHttpService"
+            android:stopWithTask="false"
+            android:exported="false">
+
+        </service>
+
+        <activity
+            android:name="com.ambabovpn.pro.activities.AboutActivity"
+            android:parentActivityName="com.ambabovpn.pro.AmbaboVpnProActivity"
+            android:label="@string/about"/>
+        
+        <activity android:name="com.ambabovpn.pro.SpeedTest"
+            android:parentActivityName="com.ambabovpn.pro.AmbaboVpnProActivity"
+            android:label="Speed Test"/>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2905188701168289~8369254736"/>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+
+    </application>
+
+</manifest>
